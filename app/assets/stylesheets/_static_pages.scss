@@ -647,7 +647,22 @@ footer p{
 	top: 20px;
 }
 
+#contact-info {
+	width: 60%;
+	padding: 10px;
+}
 
+.contact-info-links{
+	padding: 10px;
+	border: 2px solid black;
+	font-size: 3em;
+	background: white;
+}
+
+.contact-info-links:hover{
+	background: transparent;
+	text-decoration: none
+}
 
 
 
