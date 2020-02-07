@@ -16,3 +16,21 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function () {
+//    navbar toggle
+  $('.nav-container').click(function () {
+    $('.testing').toggleClass('toggling')
+  })
+
+  //    smooth scroll
+  $('.scrolling-link').click(function (link) {
+    link.preventDefault()
+
+    const target = $(this).attr('href')
+
+    $('html, body').stop().animate({
+      scrollTop: $(target).offset().top - 25
+    }, 3000)
+  })
+})
